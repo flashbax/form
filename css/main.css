@@ -1,0 +1,18 @@
+h1 { 
+    font-family: Arial, Helvetica, sans-serif;
+    color: #698948;
+    font-size: 14px;
+}
+
+label { 
+    font-family: Arial, Helvetica, sans-serif;
+    color: #696d72;
+    font-size: 12px;
+}
+
+input { 
+    border: 1px solid #696d72;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
