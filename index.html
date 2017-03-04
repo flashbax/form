@@ -8,8 +8,81 @@
     <h1>Test Form</h1>
     <!-- form start --> 
     <form> 
-        <label>First Name:</label><input type="text" id="firstName"/><br />
+        <!-- generate automatic date --> 
+        <label>Date:</label><label id="date"></label>
+        <br /><br />
+        <label>Referral:</label>
+        <select>
+            <option value="Search Engine">Search Engine</option>
+            <option value="Website">Website</option>
+            <option value="Yellow Pages">Yellow Pages</option>
+        </select>
+        <br /><br />
+        <!-- either or script --> 
+        <label>Mr.</label><input type="checkbox" id="mr"/>
+        <label>Ms.</label><input type="checkbox" id="ms"/>
+        <label>Mrs.</label><input type="checkbox" id="mrs"/><br />
+
+        <label>First Name:</label><input type="text" id="firstName"/>
         <label>Last Name:</label><input type="text" id="lastName"/><br /> 
+
+        <label>File Type</label>
+        <select>
+            <option value="Motor Vehicle<">Motor Vehicle</option>
+            <option value="Slip and Fal">Slip and Fall</option>
+            <option value="Property Damage">Property Damage</option>
+        </select>
+        
+        <!-- either or script --> 
+        <!-- generate only if MVA -->
+        <label>Driver?</label><input type="checkbox" id="driver"/>
+        <label>Passenger?</label><input type="checkbox" id="passenger"/>
+        
+        <label>Date of Loss:</label><input type="date" id="dateOfLoss"/><br />
+        
+        <!-- add addition button for phone --> 
+        <label>Phone:</label><br />
+        <select>
+            <option value="Home">Home</option>
+            <option value="Work">Work</option>
+            <option value="Mobile">Mobile</option>
+            <option value="Fax">Fax</option>
+        </select>
+        <input type="text" id="area" maxlength="3" size="3"/><label id="dash">-</label><input type="text" id="firstThree" maxlength="3" size="3"/><label id="dash">-</label><input type="text" id="lastFour" maxlength="4" size="4"/>
+        <br />
+
+        <!-- add addition button for address --> 
+        <label>Address:</label><br />
+        <select>
+            <option value="Home">Home</option>
+            <option value="Work">Work</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <label>Address Type:</label>
+        <select>
+            <option value="St.">St.</option>
+            <option value="Rd.">Rd.</option>
+            <option value="Blvd.">Blvd.</option>
+        </select>
+
+        <!-- populate with type of address -->
+        <label id=popType></label><label>Number:</label><input type="text" id="addressNum" size="3"/>
+        <label id=popType></label><label>Name:</label><input type="text" id="addressName" size="10"/>
+        
+        <label>City</label><input type="text" id="addressCity" size="10"/>
+        <label>Province</label>
+        <select>
+            <option value="Ontario">Ontario</option>
+            <option value="Alberta">Aberta</option>
+            <option value="PEI">PEI</option>
+        </select>
+
+        <br />
+        <!-- script for logged in user --> 
+        <label>Form filled out by:</label><label id="username"></label>
+
+        <br /> <br />
         <input type="submit" value="Submit" id="submit">
     </form>
     <!-- form end --> 
